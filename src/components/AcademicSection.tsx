@@ -22,6 +22,7 @@ const AcademicSection = () => {
                   <Period>{academic.period}</Period>
                 </CardHeader>
                 <Major>{academic.major}</Major>
+                <Description>{academic.description}</Description>
               </AcademicInfo>
             </CardContent>
           </AcademicCard>
@@ -115,6 +116,17 @@ const Major = styled.div`
   color: ${({ theme }) => theme.colors.text.secondary};
   font-size: 1.1rem;
   margin-bottom: 1rem;
+`;
+
+const Description = styled.p`
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: ${({ theme }) => theme.colors.text.secondary};
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export default AcademicSection;

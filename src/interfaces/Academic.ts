@@ -4,4 +4,5 @@ export interface Academic {
   major: string;
   period: string;
   logoUrl: string;
+  description: string;
 }
