@@ -28,7 +28,7 @@ function App() {
 
 const Container = styled.div`
   min-height: 100vh;
-  min-width: 380px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.background};
@@ -57,12 +57,13 @@ const ContentWrapper = styled.div`
 
   @media (max-width: 1240px) {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   @media (max-width: 768px) {
     padding: 0;
     gap: 1.5rem;
+    max-width: 100%;
   }
 `;
 
