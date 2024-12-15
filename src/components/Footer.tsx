@@ -14,6 +14,12 @@ const Footer = () => {
 
   return (
     <FooterContainer>
+      <VisitorCounter>
+        <img
+          src="https://hits.sh/made-by-mukho.github.io.svg"
+          alt="방문자 수"
+        />
+      </VisitorCounter>
       <FooterText>{getFooterText()}</FooterText>
     </FooterContainer>
   );
@@ -24,6 +30,14 @@ const FooterContainer = styled.footer`
   background-color: #e0e0e0;
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
+`;
+
+const VisitorCounter = styled.div`
+  margin-bottom: 1rem;
+
+  img {
+    height: 20px;
+  }
 `;
 
 const FooterText = styled.p`

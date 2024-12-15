@@ -1,6 +1,6 @@
 {
   "name": "made-by-mukho",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "cra-template-typescript": "1.2.0",
