@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { academics } from "../data/Academics.ts";
+import { academics } from "../data/Academics";
 
 const AcademicSection = () => {
   return (

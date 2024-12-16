@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { experiences } from "../data/Experiences.ts";
+import { experiences } from "../data/Experiences";
 
 const ExperienceSection = () => {
   return (

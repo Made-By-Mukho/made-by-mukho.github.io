@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { educations } from "../data/Educations.ts";
+import { educations } from "../data/Educations";
 
 const EducationSection = () => {
   return (

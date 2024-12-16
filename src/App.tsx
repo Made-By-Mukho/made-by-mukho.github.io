@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "./components/Header.tsx";
-import GithubCard from "./components/GithubCard.tsx";
-import ExperienceSection from "./components/ExperienceSection.tsx";
-import AcademicSection from "./components/AcademicSection.tsx";
-import ProjectSection from "./components/ProjectSection.tsx";
-import EducationSection from "./components/EducationSection.tsx";
-import Footer from "./components/Footer.tsx";
+import Header from "./components/Header";
+import GithubCard from "./components/GithubCard";
+import ExperienceSection from "./components/ExperienceSection";
+import AcademicSection from "./components/AcademicSection";
+import ProjectSection from "./components/ProjectSection";
+import EducationSection from "./components/EducationSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (

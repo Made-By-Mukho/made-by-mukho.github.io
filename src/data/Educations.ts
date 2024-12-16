@@ -1,4 +1,4 @@
-import { Education } from "../interfaces/Education.ts";
+import { Education } from "../interfaces/Education";
 
 export const educations: Education[] = [
   {

@@ -1,4 +1,4 @@
-import { Academic } from "../interfaces/Academic.ts";
+import { Academic } from "../interfaces/Academic";
 
 export const academics: Academic[] = [
   {

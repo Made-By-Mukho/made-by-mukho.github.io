@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { projects } from "../data/Projects.ts";
+import { projects } from "../data/Projects";
 
 const ProjectSection = () => {
   return (
