@@ -52,7 +52,7 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: "아 맞다 우산",
+    title: "[진행 중] 아 맞다 우산",
     description: "우산 알림 애플리케이션",
     imageUrl: umbrella,
     projectUrl: "https://github.com/Mukho-I-O",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: "EduBox",
+    title: "[진행 중] EduBox",
     description: "FE Engineer",
     imageUrl: edubox,
     projectUrl: "https://github.com/SSAFY-Escape-from-backend-potato",
@@ -82,5 +82,13 @@ export const projects: Project[] = [
     imageUrl: mbm,
     projectUrl: "https://made-by-mukho.github.io/",
     githubUrl: "https://github.com/Made-By-Mukho/made-by-mukho.github.io",
+  },
+  {
+    id: 10,
+    title: "Underworld LINE Pro",
+    description: "채팅 서비스 3.0",
+    imageUrl: underworld,
+    projectUrl: "https://linepro.mukho.r-e.kr/",
+    githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Pro",
   },
 ];
