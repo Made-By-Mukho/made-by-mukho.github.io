@@ -8,7 +8,7 @@ import umbrella from "../assets/images/umbrella.png";
 import questionbank from "../assets/images/questionbank.png";
 import edubox from "../assets/images/edubox.png";
 import mbm from "../assets/images/mbm.png";
-
+import linepro from "../assets/images/linepro.png";
 export const projects: Project[] = [
   {
     id: 1,
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     id: 10,
     title: "Underworld LINE Pro",
     description: "채팅 서비스 3.0",
-    imageUrl: underworld,
+    imageUrl: linepro,
     projectUrl: "https://linepro.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Pro",
   },
