@@ -8,6 +8,7 @@ import ssammu from "../assets/images/ssammu.png";
 import questionbank from "../assets/images/questionbank.png";
 // import edubox from "../assets/images/edubox.png";
 import mbm from "../assets/images/mbm.png";
+import linepro from "../assets/images/linepro.png";
 import espers from "../assets/images/espers.png";
 
 export const projects: Project[] = [
@@ -86,6 +87,14 @@ export const projects: Project[] = [
   },
   {
     id: 10,
+    title: "Underworld LINE Pro",
+    description: "채팅 서비스 3.0",
+    imageUrl: linepro,
+    projectUrl: "https://linepro.mukho.r-e.kr/",
+    githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Pro",
+  },
+  {
+    id: 11,
     title: "ESPers Data Arena",
     description: "동아리 통계 포털",
     imageUrl: espers,

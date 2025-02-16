@@ -8,6 +8,6 @@ export const academics: Academic[] = [
     period: "2016.03. - 2023.02.",
     logoUrl:
       "https://yt3.googleusercontent.com/ytc/AIdro_kPkklM53rC-uk0KdHDp-KuSDtlVVRJkeeMC3U7FOy8ng=s160-c-k-c0x00ffffff-no-rj",
-    description: "2022년도 경희대학교 봄 프로그래밍 경시대회 입상(장려상)",
+    description: "2022년도 경희대학교 봄 프로그래밍 경시대회 입상",
   },
 ];
