@@ -9,7 +9,8 @@ import questionbank from "../assets/images/questionbank.png";
 // import edubox from "../assets/images/edubox.png";
 import mbm from "../assets/images/mbm.png";
 import linepro from "../assets/images/linepro.png";
-import espers from "../assets/images/espers.png";
+// import espers from "../assets/images/espers.png";
+import smb from "../assets/images/smb.png";
 
 export const projects: Project[] = [
   {
@@ -93,12 +94,20 @@ export const projects: Project[] = [
     projectUrl: "https://linepro.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Pro",
   },
+  // {
+  //   id: 11,
+  //   title: "ESPers Data Arena",
+  //   description: "동아리 통계 포털",
+  //   imageUrl: espers,
+  //   projectUrl: "https://github.com/mukhoplus/ESPers-Data-Arena",
+  //   githubUrl: "https://github.com/mukhoplus/ESPers-Data-Arena",
+  // },
   {
-    id: 11,
-    title: "ESPers Data Arena",
-    description: "동아리 통계 포털",
-    imageUrl: espers,
-    projectUrl: "https://github.com/mukhoplus/ESPers-Data-Arena",
-    githubUrl: "https://github.com/mukhoplus/ESPers-Data-Arena",
+    id: 12,
+    title: "쌈무톡",
+    description: "메이플스토리 API를 이용한 카카오톡 오픈채팅 봇",
+    imageUrl: smb,
+    projectUrl: "https://github.com/mukhoplus/ssammubot",
+    githubUrl: "https://github.com/mukhoplus/ssammubot",
   },
 ];
