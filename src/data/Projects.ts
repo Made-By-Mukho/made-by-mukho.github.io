@@ -10,7 +10,7 @@ import questionbank from "../assets/images/questionbank.png";
 import mbm from "../assets/images/mbm.png";
 import linepro from "../assets/images/linepro.png";
 // import espers from "../assets/images/espers.png";
-import smb from "../assets/images/smb.png";
+import smbot from "../assets/images/smb.png";
 
 export const projects: Project[] = [
   {
@@ -104,9 +104,9 @@ export const projects: Project[] = [
   // },
   {
     id: 12,
-    title: "쌈무톡",
+    title: "쌈무봇",
     description: "메이플스토리 API를 이용한 카카오톡 오픈채팅 봇",
-    imageUrl: smb,
+    imageUrl: smbot,
     projectUrl: "https://github.com/mukhoplus/ssammubot",
     githubUrl: "https://github.com/mukhoplus/ssammubot",
   },
