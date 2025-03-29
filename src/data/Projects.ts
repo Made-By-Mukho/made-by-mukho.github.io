@@ -105,7 +105,7 @@ export const projects: Project[] = [
   {
     id: 12,
     title: "쌈무봇",
-    description: "메이플스토리 API를 이용한 카카오톡 오픈채팅 봇",
+    description: "메이플스토리 API를 이용한 카카오톡 오픈 채팅 봇",
     imageUrl: smbot,
     projectUrl: "https://github.com/mukhoplus/ssammubot",
     githubUrl: "https://github.com/mukhoplus/ssammubot",
