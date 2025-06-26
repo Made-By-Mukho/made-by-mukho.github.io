@@ -11,6 +11,7 @@ import mbm from "../assets/images/mbm.png";
 import linepro from "../assets/images/linepro.png";
 // import espers from "../assets/images/espers.png";
 import smbot from "../assets/images/smb.png";
+import smweb from "../assets/images/smw.png";
 
 export const projects: Project[] = [
   {
@@ -69,45 +70,36 @@ export const projects: Project[] = [
     projectUrl: "https://github.com/mukhoplus/questionbank",
     githubUrl: "https://github.com/mukhoplus/questionbank",
   },
-  // {
-  //   id: 8,
-  //   title: "EduBox",
-  //   description: "FE Engineer",
-  //   imageUrl: edubox,
-  //   projectUrl: "https://github.com/SSAFY-Escape-from-backend-potato",
-  //   githubUrl:
-  //     "https://github.com/SSAFY-Escape-from-backend-potato/edubox_front_team1",
-  // },
   {
-    id: 9,
+    id: 8,
     title: "Made By Mukho",
-    description: "묵호 갤러리",
+    description: "묵호 포트폴리오 사이트",
     imageUrl: mbm,
     projectUrl: "https://made-by-mukho.github.io/",
     githubUrl: "https://github.com/Made-By-Mukho/made-by-mukho.github.io",
   },
   {
-    id: 10,
+    id: 9,
     title: "Underworld LINE Pro",
     description: "채팅 서비스 3.0",
     imageUrl: linepro,
     projectUrl: "https://linepro.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Pro",
   },
-  // {
-  //   id: 11,
-  //   title: "ESPers Data Arena",
-  //   description: "동아리 통계 포털",
-  //   imageUrl: espers,
-  //   projectUrl: "https://github.com/mukhoplus/ESPers-Data-Arena",
-  //   githubUrl: "https://github.com/mukhoplus/ESPers-Data-Arena",
-  // },
   {
-    id: 12,
+    id: 10,
     title: "쌈무봇",
-    description: "메이플스토리 API를 이용한 카카오톡 오픈 채팅 봇",
+    description: "메이플스토리 API를 이용한 카카오톡 오픈 채팅 봇 서버",
     imageUrl: smbot,
-    projectUrl: "https://github.com/mukhoplus/ssammubot",
+    projectUrl: "https://smweb.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/ssammubot",
+  },
+  {
+    id: 11,
+    title: "쌈무봇 Web",
+    description: "메이플스토리 API를 이용한 웹 채팅 봇",
+    imageUrl: smweb,
+    projectUrl: "https://smweb.mukho.r-e.kr/",
+    githubUrl: "https://github.com/mukhoplus/ssammubot-web",
   },
 ];
