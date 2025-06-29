@@ -19,8 +19,8 @@ export const projects: Project[] = [
     title: "철벽레스텔 예약 일자 계산기",
     description: "복지회관 유틸리티 프로그램",
     imageUrl: rdc,
-    projectUrl: "https://github.com/mukhoplus",
-    githubUrl: "https://github.com/mukhoplus",
+    projectUrl: "https://github.com/mukhoplus/Reservation-Date-Calculator",
+    githubUrl: "https://github.com/mukhoplus/Reservation-Date-Calculator",
   },
   {
     id: 2,
