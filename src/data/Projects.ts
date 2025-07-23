@@ -90,7 +90,8 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "쌈무봇",
-    description: "메이플스토리 API를 이용한 카카오톡 오픈 채팅 봇 서버",
+    description:
+      "[NEXON Open API_Main 노출] 메이플스토리 API를 이용한 카카오톡 오픈 채팅 봇 서버",
     imageUrl: smbot,
     projectUrl: "https://smweb.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/ssammubot",
@@ -98,7 +99,8 @@ export const projects: Project[] = [
   {
     id: 11,
     title: "쌈무봇 Web",
-    description: "메이플스토리 API를 이용한 웹 채팅 봇",
+    description:
+      "[NEXON Open API_Main 노출] 메이플스토리 API를 이용한 웹 채팅 봇",
     imageUrl: smweb,
     projectUrl: "https://smweb.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/ssammubot-web",
