@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: "Underworld LINE+",
-    description: "1:1 웹/앱 채팅 서비스",
+    description: "1:1 웹/앱 실시간 채팅 서비스",
     imageUrl: underworld,
     projectUrl: "https://underworld-line.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Plus",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
   },
   {
     id: 10,
-    title: "쌈무봇 Web",
+    title: "쌈무봇",
     description:
       "[NEXON Open API_Main 노출] 메이플스토리 API를 이용한 웹 채팅 봇",
     imageUrl: smweb,

@@ -6,9 +6,9 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     if (currentYear === 2024) {
-      return `Copyright © ${currentYear} Made By Mukho. All rights reserved.`;
+      return `Copyright © ${currentYear} Mukho. All rights reserved.`;
     } else {
-      return `Copyright © ${currentYear} - ${currentYear} Made By Mukho. All rights reserved.`;
+      return `Copyright © 2024 - ${currentYear} Mukho. All rights reserved.`;
     }
   };
 

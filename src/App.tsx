@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
 import GithubCard from "./components/GithubCard";
+import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
 import AcademicSection from "./components/AcademicSection";
 import ProjectSection from "./components/ProjectSection";
@@ -15,6 +16,7 @@ function App() {
       <Main>
         <ContentWrapper>
           <GithubCard />
+          <AboutSection />
           <ExperienceSection />
           <AcademicSection />
           <ProjectSection />
