@@ -10,7 +10,7 @@ import questionbank from "../assets/images/questionbank.png";
 import mbm from "../assets/images/mbm.png";
 import linepro from "../assets/images/linepro.png";
 // import espers from "../assets/images/espers.png";
-import smbot from "../assets/images/smb.png";
+// import smbot from "../assets/images/smb.png";
 import smweb from "../assets/images/smw.png";
 import mootprint from "../assets/images/mootprint.png";
 
@@ -89,15 +89,6 @@ export const projects: Project[] = [
   },
   {
     id: 10,
-    title: "쌈무봇",
-    description:
-      "[NEXON Open API_Main 노출] 메이플스토리 API를 이용한 카카오톡 오픈 채팅 봇 서버",
-    imageUrl: smbot,
-    projectUrl: "https://smweb.mukho.r-e.kr/",
-    githubUrl: "https://github.com/mukhoplus/ssammubot",
-  },
-  {
-    id: 11,
     title: "쌈무봇 Web",
     description:
       "[NEXON Open API_Main 노출] 메이플스토리 API를 이용한 웹 채팅 봇",
@@ -106,7 +97,7 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/mukhoplus/ssammubot-web",
   },
   {
-    id: 12,
+    id: 11,
     title: "MootPrint",
     description: "발자취를 기록하는 위치 기반 모바일 서비스",
     imageUrl: mootprint,
