@@ -13,6 +13,7 @@ import linepro from "../assets/images/linepro.png";
 // import smbot from "../assets/images/smb.png";
 import smweb from "../assets/images/smw.png";
 import mootprint from "../assets/images/mootprint.png";
+import potensimul from "../assets/images/potensimul.png";
 
 export const projects: Project[] = [
   {
@@ -103,5 +104,13 @@ export const projects: Project[] = [
     imageUrl: mootprint,
     projectUrl: "https://github.com/mukhoplus/MootPrint-Archive",
     githubUrl: "https://github.com/mukhoplus/MootPrint-Archive",
+  },
+  {
+    id: 12,
+    title: "Potention-Simulator",
+    description: "메이플스토리 잠재능력 시뮬레이터",
+    imageUrl: potensimul,
+    projectUrl: "https://simulator.mukho.r-e.kr/",
+    githubUrl: "https://github.com/mukhoplus/Potention-Simulator",
   },
 ];
