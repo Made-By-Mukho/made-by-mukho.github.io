@@ -107,10 +107,10 @@ export const projects: Project[] = [
   },
   {
     id: 12,
-    title: "Potention-Simulator",
+    title: "Potential-Simulator",
     description: "메이플스토리 잠재능력 시뮬레이터",
     imageUrl: potensimul,
     projectUrl: "https://simulator.mukho.r-e.kr/",
-    githubUrl: "https://github.com/mukhoplus/Potention-Simulator",
+    githubUrl: "https://github.com/mukhoplus/Potential-Simulator",
   },
 ];
