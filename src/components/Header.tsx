@@ -24,6 +24,11 @@ const HeaderTitle = styled.h1`
   font-size: 1.5rem;
   color: ${({ theme }) => theme.colors.white};
 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   @media (max-width: 768px) {
     font-size: 1.25rem;
   }
