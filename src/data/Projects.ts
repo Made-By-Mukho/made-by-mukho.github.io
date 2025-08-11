@@ -91,9 +91,9 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "쌈무봇",
-    description: "*메이플스토리 API를 이용한 웹 채팅 봇",
+    description: "메이플스토리 API를 이용한 웹 채팅 봇",
     imageUrl: smweb,
-    projectUrl: "https://smweb.mukho.r-e.kr/",
+    projectUrl: "https://ssammubot.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/ssammubot-web",
   },
   {
