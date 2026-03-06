@@ -13,7 +13,8 @@ import linepro from "../assets/images/linepro.png";
 // import smbot from "../assets/images/smb.png";
 import smweb from "../assets/images/smw.png";
 import mootprint from "../assets/images/mootprint.png";
-import potensimul from "../assets/images/potensimul.png";
+// import potensimul from "../assets/images/potensimul.png";
+import meomeokno from "../assets/images/meomeokno.png";
 import muktbook from "../assets/images/muktbook.png";
 
 export const projects: Project[] = [
@@ -92,9 +93,9 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "쌈무봇",
-    description: "*메이플스토리 API를 이용한 웹 채팅 봇",
+    description: "메이플스토리 API를 이용한 웹 채팅 봇",
     imageUrl: smweb,
-    projectUrl: "https://smweb.mukho.r-e.kr/",
+    projectUrl: "https://ssammubot.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/ssammubot-web",
   },
   {
@@ -105,16 +106,25 @@ export const projects: Project[] = [
     projectUrl: "https://github.com/mukhoplus/MootPrint-Archive",
     githubUrl: "https://github.com/mukhoplus/MootPrint-Archive",
   },
-  {
-    id: 12,
-    title: "Potential-Simulator",
-    description: "메이플스토리 잠재능력 시뮬레이터",
-    imageUrl: potensimul,
-    projectUrl: "https://potential-simulator.vercel.app/",
-    githubUrl: "https://github.com/mukhoplus/Potential-Simulator",
-  },
+  // {
+  //   id: 12,
+  //   title: "Potential-Simulator",
+  //   description: "메이플스토리 잠재능력 시뮬레이터",
+  //   imageUrl: potensimul,
+  //   projectUrl: "https://potential-simulator.vercel.app/",
+  //   githubUrl: "https://github.com/mukhoplus/Potential-Simulator",
+  // },
   {
     id: 13,
+    title: "뭐먹노",
+    description: "무작위 식당 추천 서비스",
+    imageUrl: meomeokno,
+    projectUrl:
+      "https://drive.google.com/file/d/1mP3sWAPygWoesRX7Prt-rllEzjk9Ifbp/view?usp=drive_link",
+    githubUrl: "https://github.com/mukhoplus/meomeokno",
+  },
+  {
+    id: 14,
     title: "Muktbook",
     description: "자체 제작 Moltbook",
     imageUrl: muktbook,
