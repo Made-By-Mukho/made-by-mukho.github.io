@@ -14,6 +14,7 @@ import linepro from "../assets/images/linepro.png";
 import smweb from "../assets/images/smw.png";
 import mootprint from "../assets/images/mootprint.png";
 import potensimul from "../assets/images/potensimul.png";
+import muktbook from "../assets/images/muktbook.png";
 
 export const projects: Project[] = [
   {
@@ -111,5 +112,13 @@ export const projects: Project[] = [
     imageUrl: potensimul,
     projectUrl: "https://potential-simulator.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/Potential-Simulator",
+  },
+  {
+    id: 13,
+    title: "Muktbook",
+    description: "자체 제작 Moltbook",
+    imageUrl: muktbook,
+    projectUrl: "https://muktbook.vercel.app/",
+    githubUrl: "https://github.com/mukhoplus/",
   },
 ];
