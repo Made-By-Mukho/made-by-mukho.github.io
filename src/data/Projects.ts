@@ -16,6 +16,7 @@ import mootprint from "../assets/images/mootprint.png";
 // import potensimul from "../assets/images/potensimul.png";
 import meomeokno from "../assets/images/meomeokno.png";
 import muktbook from "../assets/images/muktbook.png";
+import cafficiency from "../assets/images/cafficiency.png";
 
 export const projects: Project[] = [
   {
@@ -130,5 +131,13 @@ export const projects: Project[] = [
     imageUrl: muktbook,
     projectUrl: "https://muktbook.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/",
+  },
+  {
+    id: 15,
+    title: "카성비",
+    description: "카페인 함량 정보 제공 앱",
+    imageUrl: cafficiency,
+    projectUrl: "https://cafficiency.vercel.app/",
+    githubUrl: "https://github.com/mukhoplus/cafficiency",
   },
 ];
