@@ -19,7 +19,7 @@ const GithubCard = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            [Github] MukhoPlus
+            [Github] Mukhoplus
           </GithubLink>
         </ProfileInfo>
       </CardContent>
