@@ -17,7 +17,7 @@ export const educations: Education[] = [
   },
   {
     id: 3,
-    title: "KB국민은행 IT아카데미 IT’s Your Life 3기",
+    title: "KB국민은행 IT아카데미 IT's Your Life 3기",
     institution: "멀티캠퍼스",
     period: "2023.03. - 2023.05.",
     description: "Spring 핵심 모듈 기반 웹/앱 어플리케이션 개발 학습",

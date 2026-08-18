@@ -13,4 +13,11 @@ export const experiences: Experience[] = [
       "LG CNS AM Incubation Camp 수료",
     ],
   },
+  {
+    id: 2,
+    company: "롯데이노베이트(주)",
+    role: "Software Engineer",
+    period: "2026.08. -",
+    description: ["Software"],
+  },
 ];

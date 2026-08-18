@@ -15,7 +15,7 @@ import smweb from "../assets/images/smw.png";
 import mootprint from "../assets/images/mootprint.png";
 // import potensimul from "../assets/images/potensimul.png";
 import meomeokno from "../assets/images/meomeokno.png";
-import muktbook from "../assets/images/muktbook.png";
+// import muktbook from "../assets/images/muktbook.png";
 import cafficiency from "../assets/images/cafficiency.png";
 
 export const projects: Project[] = [
@@ -94,7 +94,7 @@ export const projects: Project[] = [
   {
     id: 10,
     title: "쌈무봇",
-    description: "메이플스토리 API를 이용한 웹 채팅 봇",
+    description: "NEXON Open API를 활용한 메이플스토리 정보 제공 오픈채팅 봇",
     imageUrl: smweb,
     projectUrl: "https://ssammubot.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/ssammubot-web",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
   {
     id: 11,
     title: "MootPrint",
-    description: "발자취를 기록하는 위치 기반 모바일 서비스",
+    description: "발자취를 기록하는 위치 기록 애플리케이션",
     imageUrl: mootprint,
     projectUrl: "https://github.com/mukhoplus/MootPrint-Archive",
     githubUrl: "https://github.com/mukhoplus/MootPrint-Archive",
@@ -118,20 +118,20 @@ export const projects: Project[] = [
   {
     id: 13,
     title: "뭐먹노",
-    description: "무작위 식당 추천 서비스",
+    description: "위치 기반 무작위 식당 추천 서비스",
     imageUrl: meomeokno,
     projectUrl:
       "https://drive.google.com/file/d/1mP3sWAPygWoesRX7Prt-rllEzjk9Ifbp/view?usp=drive_link",
     githubUrl: "https://github.com/mukhoplus/meomeokno",
   },
-  {
-    id: 14,
-    title: "Muktbook",
-    description: "자체 제작 Moltbook",
-    imageUrl: muktbook,
-    projectUrl: "https://muktbook.vercel.app/",
-    githubUrl: "https://github.com/mukhoplus/",
-  },
+  // {
+  //   id: 14,
+  //   title: "Muktbook",
+  //   description: "자체 제작 Moltbook",
+  //   imageUrl: muktbook,
+  //   projectUrl: "https://muktbook.vercel.app/",
+  //   githubUrl: "https://github.com/mukhoplus/",
+  // },
   {
     id: 15,
     title: "카성비",

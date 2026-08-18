@@ -7,20 +7,22 @@ const ExperienceSection = () => {
     <Section>
       <SectionTitle>경력</SectionTitle>
       <ExperienceGrid>
-        {experiences.map((experience) => (
-          <ExperienceCard key={experience.id}>
-            <CardHeader>
-              <CompanyName>{experience.company}</CompanyName>
-              <Period>{experience.period}</Period>
-            </CardHeader>
-            <Role>{experience.role}</Role>
-            <Description>
-              {experience.description.map((item, index) => (
-                <DescriptionItem key={index}>{item}</DescriptionItem>
-              ))}
-            </Description>
-          </ExperienceCard>
-        ))}
+        {experiences
+          .toSorted((a, b) => b.id - a.id)
+          .map((experience) => (
+            <ExperienceCard key={experience.id}>
+              <CardHeader>
+                <CompanyName>{experience.company}</CompanyName>
+                <Period>{experience.period}</Period>
+              </CardHeader>
+              <Role>{experience.role}</Role>
+              <Description>
+                {experience.description.map((item, index) => (
+                  <DescriptionItem key={index}>{item}</DescriptionItem>
+                ))}
+              </Description>
+            </ExperienceCard>
+          ))}
       </ExperienceGrid>
     </Section>
   );
