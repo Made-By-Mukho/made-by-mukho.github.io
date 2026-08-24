@@ -18,6 +18,6 @@ export const experiences: Experience[] = [
     company: "롯데이노베이트(주)",
     role: "Software Engineer",
     period: "2026.08. -",
-    description: ["Software"],
+    description: ["롯데백화점 Software 개발"],
   },
 ];

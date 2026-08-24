@@ -17,6 +17,7 @@ import mootprint from "../assets/images/mootprint.png";
 import meomeokno from "../assets/images/meomeokno.png";
 // import muktbook from "../assets/images/muktbook.png";
 import cafficiency from "../assets/images/cafficiency.png";
+import mukgall from "../assets/images/mukgall.png";
 
 export const projects: Project[] = [
   {
@@ -40,7 +41,7 @@ export const projects: Project[] = [
     title: "Underworld LINE+",
     description: "1:1 웹/앱 실시간 채팅 서비스",
     imageUrl: underworld,
-    projectUrl: "https://underworld-line.mukho.r-e.kr/",
+    projectUrl: "https://linepro.mukho.r-e.kr/",
     githubUrl: "https://github.com/mukhoplus/Underworld-LINE-Plus",
   },
   {
@@ -139,5 +140,13 @@ export const projects: Project[] = [
     imageUrl: cafficiency,
     projectUrl: "https://cafficiency.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/cafficiency",
+  },
+  {
+    id: 16,
+    title: "묵호 갤러리",
+    description: "묵호의 커뮤니티 사이트",
+    imageUrl: mukgall,
+    projectUrl: "https://mukgall.vercel.app/",
+    githubUrl: "https://github.com/fakeengineer333/mukgall",
   },
 ];
