@@ -142,7 +142,7 @@ Error generating stack: `+a.message+`
   &:first-child {
     margin-bottom: 0.5rem;
   }
-`,jg=[{id:1,company:"(주)비즈테크아이",role:"Software Engineer",period:"2023.09. - 2023.11.",description:["[인턴] Java 개발","Spring(Java), React(JavaScript) 기반 웹 풀스택 개발","개인 프로젝트(FE/TA), 팀 프로젝트 각 2회 수행","LG CNS AM Incubation Camp 수료"]},{id:2,company:"롯데이노베이트(주)",role:"Software Engineer",period:"2026.08. -",description:["롯데백화점 Software 개발"]}],Rg=()=>R.jsxs(Hg,{children:[R.jsx(Gg,{children:"경력"}),R.jsx(Bg,{children:jg.toSorted((i,o)=>o.id-i.id).map(i=>R.jsxs(qg,{children:[R.jsxs(Yg,{children:[R.jsx(Xg,{children:i.company}),R.jsx(Qg,{children:i.period})]}),R.jsx(Zg,{children:i.role}),R.jsx(Lg,{children:i.description.map((o,d)=>R.jsx(Vg,{children:o},d))})]},i.id))})]}),Hg=Y.section`
+`,jg=[{id:1,company:"(주)비즈테크아이",role:"Software Engineer",period:"2023.09. - 2023.11.",description:["[인턴] Java 개발","Spring(Java), React(JavaScript) 기반 웹 풀스택 개발","개인 프로젝트(FE/TA), 팀 프로젝트 각 2회 수행","LG CNS AM Incubation Camp 수료"]},{id:2,company:"롯데이노베이트(주)",role:"Software Engineer",period:"2026.08. -",description:["백화점IS팀 MD서비스 운영"]}],Rg=()=>R.jsxs(Hg,{children:[R.jsx(Gg,{children:"경력"}),R.jsx(Bg,{children:jg.toSorted((i,o)=>o.id-i.id).map(i=>R.jsxs(qg,{children:[R.jsxs(Yg,{children:[R.jsx(Xg,{children:i.company}),R.jsx(Qg,{children:i.period})]}),R.jsx(Zg,{children:i.role}),R.jsx(Lg,{children:i.description.map((o,d)=>R.jsx(Vg,{children:o},d))})]},i.id))})]}),Hg=Y.section`
   margin-bottom: 2rem;
 `,Gg=Y.h2`
   font-size: 1.5rem;
@@ -261,12 +261,12 @@ Error generating stack: `+a.message+`
   @media (max-width: 768px) {
     text-align: left;
   }
-`,iv="/assets/rdc-CxyF_VyK.png",cv="/assets/scrank-CIWvF_QK.png",fv="/assets/underworld-DSfTZtkI.png",sv="/assets/mlock-UFP4lqpK.png",ov="/assets/ssammu-vJemkQV3.png",rv="/assets/questionbank-CgSFmrBv.png",dv="/assets/mbm-DRdgZSF0.png",hv="/assets/linepro-Ch3R31f9.png",mv="/assets/smw-BHoiaqnD.png",yv="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAA81BMVEUAAAD/AP+AYL+ZZsyLXbmVVb+JYsSSW8iQWbyKYL+PXMKPWsOKV72OXL+KWsGNXsOQXMSMWb+PXcGLWcKNWMGMWb+MWsGOWcKLXL+NW8GOWsKMXMCOW8GMWsGNW8KMWsCNWsKNW8GOW8GOXMKMW8CNWsGMW8GMW8KMW8CMW8GNXMKOXMGNW8KNWsCNXMGNW8GMW8GNWsGNW8GMW8GNXMKOW8CNWsGOW8GNW8GNWsCNW8GNW8GNW8GOW8KNW8GNW8GNW8GNW8GOW8GNW8GNXMGNW8GNW8GNW8GNW8GNWsGNW8GNW8GNW8GNW8GNW8GNW8H///8EYdNyAAAAT3RSTlMAAQgKCwwNDhcYGSIjJCUmJygpLjE8Pj9AV1hZWltcXWBic3V2d3iBioyWmZqbnJ2goaipqqusra6vsLG+v8fKzdPj6err9PX2+Pn6+/z9+w/6SwAAAAFiS0dEUONuTLwAAAGmSURBVBgZ7cHbVtNAGAbQj0OsUFuCOoxC8cBBRUWUk1RnWoEKktB+7/828idZtWnCmkm48aJ7Y+b/1ujs9wdxPOh/Xn+E6sKDPxy7/tJGNQt7t8yJP8yjgvY5C3rL8PZ8wBIXz+CpPWCpi2V4WThnKjrcCBcXw42jiKnePHzsMXXaRObJGVPv4SG8pRhuYcL2iOJqCW4HTGwhZ4eJj3BqXFOcYkqX4iqAS4ciamJKK6J4CZd9ikMUHFN8gkufYh0FmxQ9uPymWEFBSHEJl4giQEFAcQOXiCJAQYPiBi4DihUUhBSXcPlF0UHBa4o+XL5RHKHghOIrXN5SxC1MaUYUb+CyNKQ4Q97cT4rhYzh1mdhGzjsmvsNtjYnRDv6Z2x0xsQYPlqluC5n2D6YsfGhm4uPN1SB4+uokZkbDi+U9DPwo3kPDk2UpA1+KpTS8WZYw8KdYQqMCywKDKhQLNCqxnGJQjeIUjYoscwyqUszRqMxygkF1ihM0arAcM6hDcUyjFsuMQT2KGY2aLBMGdSkmNGqzvGNQn+IdjQewpMFDvCA1Zmac/gLext/bwuZ/bAAAAABJRU5ErkJggg==",gv="/assets/meomeokno-BEJDVG-m.png",vv="/assets/cafficiency-CkO0cUjR.png",pv="/assets/mukgall-C77OIp6i.png",Sv=[{id:1,title:"철벽레스텔 예약 일자 계산기",description:"복지회관 유틸리티 프로그램",imageUrl:iv,projectUrl:"https://github.com/mukhoplus/Reservation-Date-Calculator",githubUrl:"https://github.com/mukhoplus/Reservation-Date-Calculator"},{id:2,title:"ESPers Starcraft Ranking System",description:"동아리 스타크래프트 랭킹 서비스",imageUrl:cv,projectUrl:"https://scrank.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/rank-system"},{id:3,title:"Underworld LINE+",description:"1:1 웹/앱 실시간 채팅 서비스",imageUrl:fv,projectUrl:"https://linepro.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/Underworld-LINE-Plus"},{id:4,title:"Mlock",description:"네이버 시계 클론 코딩",imageUrl:sv,projectUrl:"https://mukho-clock.github.io/",githubUrl:"https://github.com/mukhoplus/Mlock"},{id:5,title:"쌈무톡",description:"MapleStory API 기반 오픈 채팅 서비스",imageUrl:ov,projectUrl:"https://ssammutalk.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/SsamMuTalk_docs"},{id:7,title:"모의고사 생성기",description:"From xlsx to docx",imageUrl:rv,projectUrl:"https://github.com/mukhoplus/questionbank",githubUrl:"https://github.com/mukhoplus/questionbank"},{id:8,title:"Made By Mukho",description:"묵호 포트폴리오 사이트",imageUrl:dv,projectUrl:"https://made-by-mukho.github.io/",githubUrl:"https://github.com/Made-By-Mukho/made-by-mukho.github.io"},{id:9,title:"Underworld LINE Pro",description:"실시간 채팅 서비스 3.0",imageUrl:hv,projectUrl:"https://linepro.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/Underworld-LINE-Pro"},{id:10,title:"쌈무봇",description:"NEXON Open API를 활용한 메이플스토리 정보 제공 오픈채팅 봇",imageUrl:mv,projectUrl:"https://ssammubot.vercel.app/",githubUrl:"https://github.com/mukhoplus/ssammubot-web"},{id:11,title:"MootPrint",description:"발자취를 기록하는 위치 기록 애플리케이션",imageUrl:yv,projectUrl:"https://github.com/mukhoplus/MootPrint-Archive",githubUrl:"https://github.com/mukhoplus/MootPrint-Archive"},{id:13,title:"뭐먹노",description:"위치 기반 무작위 식당 추천 서비스",imageUrl:gv,projectUrl:"https://drive.google.com/file/d/1mP3sWAPygWoesRX7Prt-rllEzjk9Ifbp/view?usp=drive_link",githubUrl:"https://github.com/mukhoplus/meomeokno"},{id:15,title:"카성비",description:"카페인 함량 정보 제공 앱",imageUrl:vv,projectUrl:"https://cafficiency.vercel.app/",githubUrl:"https://github.com/mukhoplus/cafficiency"},{id:16,title:"묵호 갤러리",description:"묵호의 커뮤니티 사이트",imageUrl:pv,projectUrl:"https://mukgall.vercel.app/",githubUrl:"https://github.com/fakeengineer333/mukgall"}],bv=()=>R.jsxs(Av,{children:[R.jsx(zv,{children:"주요 프로젝트"}),R.jsx(Ev,{children:Sv.map(i=>R.jsxs(Tv,{children:[R.jsx(Ov,{src:i.imageUrl,alt:i.title,loading:"lazy"}),R.jsxs(_v,{children:[R.jsx(Mv,{children:i.title}),R.jsx(xv,{children:i.description}),R.jsxs(Uv,{children:[R.jsx(wh,{href:i.projectUrl,target:"_blank",rel:"noopener noreferrer",children:"프로젝트 보기"}),R.jsx(wh,{href:i.githubUrl,target:"_blank",rel:"noopener noreferrer",children:"GitHub"})]})]})]},i.id))})]}),Av=Y.section`
+`,iv="/assets/rdc-CxyF_VyK.png",cv="/assets/scrank-CIWvF_QK.png",fv="/assets/underworld-DSfTZtkI.png",sv="/assets/mlock-UFP4lqpK.png",ov="/assets/ssammu-vJemkQV3.png",rv="/assets/questionbank-CgSFmrBv.png",dv="/assets/mbm-DRdgZSF0.png",hv="/assets/linepro-Ch3R31f9.png",mv="/assets/espers-CvxfmA37.png",yv="/assets/smw-BHoiaqnD.png",gv="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAA81BMVEUAAAD/AP+AYL+ZZsyLXbmVVb+JYsSSW8iQWbyKYL+PXMKPWsOKV72OXL+KWsGNXsOQXMSMWb+PXcGLWcKNWMGMWb+MWsGOWcKLXL+NW8GOWsKMXMCOW8GMWsGNW8KMWsCNWsKNW8GOW8GOXMKMW8CNWsGMW8GMW8KMW8CMW8GNXMKOXMGNW8KNWsCNXMGNW8GMW8GNWsGNW8GMW8GNXMKOW8CNWsGOW8GNW8GNWsCNW8GNW8GNW8GOW8KNW8GNW8GNW8GNW8GOW8GNW8GNXMGNW8GNW8GNW8GNW8GNWsGNW8GNW8GNW8GNW8GNW8GNW8H///8EYdNyAAAAT3RSTlMAAQgKCwwNDhcYGSIjJCUmJygpLjE8Pj9AV1hZWltcXWBic3V2d3iBioyWmZqbnJ2goaipqqusra6vsLG+v8fKzdPj6err9PX2+Pn6+/z9+w/6SwAAAAFiS0dEUONuTLwAAAGmSURBVBgZ7cHbVtNAGAbQj0OsUFuCOoxC8cBBRUWUk1RnWoEKktB+7/828idZtWnCmkm48aJ7Y+b/1ujs9wdxPOh/Xn+E6sKDPxy7/tJGNQt7t8yJP8yjgvY5C3rL8PZ8wBIXz+CpPWCpi2V4WThnKjrcCBcXw42jiKnePHzsMXXaRObJGVPv4SG8pRhuYcL2iOJqCW4HTGwhZ4eJj3BqXFOcYkqX4iqAS4ciamJKK6J4CZd9ikMUHFN8gkufYh0FmxQ9uPymWEFBSHEJl4giQEFAcQOXiCJAQYPiBi4DihUUhBSXcPlF0UHBa4o+XL5RHKHghOIrXN5SxC1MaUYUb+CyNKQ4Q97cT4rhYzh1mdhGzjsmvsNtjYnRDv6Z2x0xsQYPlqluC5n2D6YsfGhm4uPN1SB4+uokZkbDi+U9DPwo3kPDk2UpA1+KpTS8WZYw8KdYQqMCywKDKhQLNCqxnGJQjeIUjYoscwyqUszRqMxygkF1ihM0arAcM6hDcUyjFsuMQT2KGY2aLBMGdSkmNGqzvGNQn+IdjQewpMFDvCA1Zmac/gLext/bwuZ/bAAAAABJRU5ErkJggg==",vv="/assets/meomeokno-BEJDVG-m.png",pv="/assets/cafficiency-CkO0cUjR.png",Sv="/assets/mukgall-C77OIp6i.png",bv=[{id:1,title:"철벽레스텔 예약 일자 계산기",description:"복지회관 유틸리티 프로그램",imageUrl:iv,projectUrl:"https://github.com/mukhoplus/Reservation-Date-Calculator",githubUrl:"https://github.com/mukhoplus/Reservation-Date-Calculator"},{id:2,title:"ESPers Starcraft Ranking System",description:"동아리 스타크래프트 랭킹 서비스",imageUrl:cv,projectUrl:"https://scrank.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/rank-system"},{id:3,title:"Underworld LINE+",description:"1:1 웹/앱 실시간 채팅 서비스",imageUrl:fv,projectUrl:"https://linepro.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/Underworld-LINE-Plus"},{id:4,title:"Mlock",description:"네이버 시계 클론 코딩",imageUrl:sv,projectUrl:"https://mukho-clock.github.io/",githubUrl:"https://github.com/mukhoplus/Mlock"},{id:5,title:"쌈무톡",description:"MapleStory API 기반 오픈 채팅 서비스",imageUrl:ov,projectUrl:"https://ssammutalk.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/SsamMuTalk_docs"},{id:7,title:"모의고사 생성기",description:"From xlsx to docx",imageUrl:rv,projectUrl:"https://github.com/mukhoplus/questionbank",githubUrl:"https://github.com/mukhoplus/questionbank"},{id:8,title:"Made By Mukho",description:"묵호 포트폴리오 사이트",imageUrl:dv,projectUrl:"https://made-by-mukho.github.io/",githubUrl:"https://github.com/Made-By-Mukho/made-by-mukho.github.io"},{id:9,title:"Underworld LINE Pro",description:"실시간 채팅 서비스 3.0",imageUrl:hv,projectUrl:"https://linepro.mukho.r-e.kr/",githubUrl:"https://github.com/mukhoplus/Underworld-LINE-Pro"},{id:10,title:"쌈무봇",description:"NEXON Open API를 활용한 메이플스토리 정보 제공 오픈채팅 봇",imageUrl:yv,projectUrl:"https://ssammubot.vercel.app/",githubUrl:"https://github.com/mukhoplus/ssammubot-web"},{id:11,title:"MootPrint",description:"발자취를 기록하는 위치 기록 애플리케이션",imageUrl:gv,projectUrl:"https://github.com/mukhoplus/MootPrint-Archive",githubUrl:"https://github.com/mukhoplus/MootPrint-Archive"},{id:13,title:"뭐먹노",description:"위치 기반 무작위 식당 추천 서비스",imageUrl:vv,projectUrl:"https://drive.google.com/file/d/1mP3sWAPygWoesRX7Prt-rllEzjk9Ifbp/view?usp=drive_link",githubUrl:"https://github.com/mukhoplus/meomeokno"},{id:15,title:"카성비",description:"카페인 함량 정보 제공 앱",imageUrl:pv,projectUrl:"https://cafficiency.vercel.app/",githubUrl:"https://github.com/mukhoplus/cafficiency"},{id:16,title:"묵호 갤러리",description:"묵호의 커뮤니티 사이트",imageUrl:Sv,projectUrl:"https://mukgall.vercel.app/",githubUrl:"https://github.com/fakeengineer333/mukgall"},{id:17,title:"ESPers Portal",description:"ESPers 운영위원회 업무 포털",imageUrl:mv,projectUrl:"https://espers.vercel.app/",githubUrl:"https://github.com/mukhoplus/espers-portal"}],Av=()=>R.jsxs(zv,{children:[R.jsx(Ev,{children:"주요 프로젝트"}),R.jsx(Tv,{children:bv.map(i=>R.jsxs(Ov,{children:[R.jsx(_v,{src:i.imageUrl,alt:i.title,loading:"lazy"}),R.jsxs(Mv,{children:[R.jsx(xv,{children:i.title}),R.jsx(Uv,{children:i.description}),R.jsxs(Dv,{children:[R.jsx(wh,{href:i.projectUrl,target:"_blank",rel:"noopener noreferrer",children:"프로젝트 보기"}),R.jsx(wh,{href:i.githubUrl,target:"_blank",rel:"noopener noreferrer",children:"GitHub"})]})]})]},i.id))})]}),zv=Y.section`
   margin-bottom: 2rem;
-`,zv=Y.h2`
+`,Ev=Y.h2`
   color: ${({theme:i})=>i.colors.primary};
   margin: 0 0 0.5rem 0;
-`,Ev=Y.div`
+`,Tv=Y.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
@@ -274,7 +274,7 @@ Error generating stack: `+a.message+`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`,Tv=Y.div`
+`,Ov=Y.div`
   background: ${({theme:i})=>i.colors.white};
   border-radius: 8px;
   overflow: hidden;
@@ -285,18 +285,18 @@ Error generating stack: `+a.message+`
     transform: translateY(-4px);
     box-shadow: ${({theme:i})=>i.shadows.medium};
   }
-`,Ov=Y.img`
+`,_v=Y.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
-`,_v=Y.div`
+`,Mv=Y.div`
   padding: 1rem;
-`,Mv=Y.h3`
+`,xv=Y.h3`
   margin: 0 0 0.5rem 0;
-`,xv=Y.p`
+`,Uv=Y.p`
   color: ${({theme:i})=>i.colors.text.secondary};
   margin: 0 0 1rem 0;
-`,Uv=Y.div`
+`,Dv=Y.div`
   display: flex;
   gap: 1rem;
 `,wh=Y.a`
@@ -310,13 +310,13 @@ Error generating stack: `+a.message+`
     background-color: ${({theme:i})=>i.colors.background};
     color: ${({theme:i})=>i.colors.primary};
   }
-`,Dv=[{id:1,title:"네이버 부스트캠프 웹・모바일 7기 챌린지",institution:"네이버 커넥트",period:"2022.07. - 2022.08.",description:"제한된 시간 내 강도 높은 프로그래밍 미션 해결 및 피어세션"},{id:2,title:"삼성SDS 2023년 상반기 대학생 알고리즘 특강",institution:"삼성SDS",period:"2023.01. - 2023.01.",description:"고급 알고리즘 기법의 이해와 문제풀이"},{id:3,title:"KB국민은행 IT아카데미 IT's Your Life 3기",institution:"멀티캠퍼스",period:"2023.03. - 2023.05.",description:"Spring 핵심 모듈 기반 웹/앱 어플리케이션 개발 학습"}],Nv=()=>R.jsxs(Cv,{children:[R.jsx(jv,{children:"참여 교육"}),R.jsx(Rv,{children:Dv.map(i=>R.jsxs(Hv,{children:[R.jsxs(Gv,{children:[R.jsx(Bv,{children:i.title}),R.jsx(qv,{children:i.institution})]}),R.jsx(Yv,{children:i.period}),R.jsx(Xv,{children:i.description})]},i.id))})]}),Cv=Y.section`
+`,Nv=[{id:1,title:"네이버 부스트캠프 웹・모바일 7기 챌린지",institution:"네이버 커넥트",period:"2022.07. - 2022.08.",description:"제한된 시간 내 강도 높은 프로그래밍 미션 해결 및 피어세션"},{id:2,title:"삼성SDS 2023년 상반기 대학생 알고리즘 특강",institution:"삼성SDS",period:"2023.01. - 2023.01.",description:"고급 알고리즘 기법의 이해와 문제풀이"},{id:3,title:"KB국민은행 IT아카데미 IT's Your Life 3기",institution:"멀티캠퍼스",period:"2023.03. - 2023.05.",description:"Spring 핵심 모듈 기반 웹/앱 어플리케이션 개발 학습"}],Cv=()=>R.jsxs(jv,{children:[R.jsx(Rv,{children:"참여 교육"}),R.jsx(Hv,{children:Nv.map(i=>R.jsxs(Gv,{children:[R.jsxs(Bv,{children:[R.jsx(qv,{children:i.title}),R.jsx(Yv,{children:i.institution})]}),R.jsx(Xv,{children:i.period}),R.jsx(Qv,{children:i.description})]},i.id))})]}),jv=Y.section`
   margin-bottom: 2rem;
-`,jv=Y.h2`
+`,Rv=Y.h2`
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: ${({theme:i})=>i.colors.primary};
-`,Rv=Y.div`
+`,Hv=Y.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
@@ -324,49 +324,49 @@ Error generating stack: `+a.message+`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`,Hv=Y.div`
+`,Gv=Y.div`
   background: #ffffff;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-`,Gv=Y.div`
+`,Bv=Y.div`
   margin-bottom: 1rem;
-`,Bv=Y.h3`
+`,qv=Y.h3`
   margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
-`,qv=Y.div`
+`,Yv=Y.div`
   color: #666;
   font-weight: 500;
-`,Yv=Y.div`
+`,Xv=Y.div`
   color: #888;
   font-size: 0.9rem;
   margin-bottom: 1rem;
-`,Xv=Y.p`
+`,Qv=Y.p`
   margin: 0;
   color: #444;
   line-height: 1.5;
-`,Qv=()=>{const i=()=>{const o=new Date().getFullYear();return o===2024?`Copyright © ${o} Mukho. All rights reserved.`:`Copyright © 2024 - ${o} Mukho. All rights reserved.`};return R.jsxs(Zv,{children:[R.jsx(Lv,{children:R.jsx("img",{src:"https://hits.sh/made-by-mukho.github.io.svg",alt:"방문자 수"})}),R.jsx(Vv,{children:i()})]})},Zv=Y.footer`
+`,Zv=()=>{const i=()=>{const o=new Date().getFullYear();return o===2024?`Copyright © ${o} Mukho. All rights reserved.`:`Copyright © 2024 - ${o} Mukho. All rights reserved.`};return R.jsxs(Lv,{children:[R.jsx(Vv,{children:R.jsx("img",{src:"https://hits.sh/made-by-mukho.github.io.svg",alt:"방문자 수"})}),R.jsx(Kv,{children:i()})]})},Lv=Y.footer`
   padding: 1.5rem;
   background-color: #e0e0e0;
   color: ${({theme:i})=>i.colors.white};
   text-align: center;
-`,Lv=Y.div`
+`,Vv=Y.div`
   margin-bottom: 1rem;
 
   img {
     height: 20px;
   }
-`,Vv=Y.p`
+`,Kv=Y.p`
   margin: 0;
   opacity: 0.9;
   color: #000;
-`;function Kv(){return R.jsxs(Jv,{children:[R.jsx(yg,{}),R.jsx(wv,{children:R.jsxs($v,{children:[R.jsx(pg,{}),R.jsx(Mg,{}),R.jsx(Rg,{}),R.jsx(Jg,{}),R.jsx(bv,{}),R.jsx(Nv,{})]})}),R.jsx(Qv,{})]})}const Jv=Y.div`
+`;function Jv(){return R.jsxs(wv,{children:[R.jsx(yg,{}),R.jsx($v,{children:R.jsxs(Wv,{children:[R.jsx(pg,{}),R.jsx(Mg,{}),R.jsx(Rg,{}),R.jsx(Jg,{}),R.jsx(Av,{}),R.jsx(Cv,{})]})}),R.jsx(Zv,{})]})}const wv=Y.div`
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   background-color: ${({theme:i})=>i.colors.background};
-`,wv=Y.main`
+`,$v=Y.main`
   flex: 1;
   width: 100%;
   display: flex;
@@ -377,7 +377,7 @@ Error generating stack: `+a.message+`
   @media (max-width: 768px) {
     padding: 16px;
   }
-`,$v=Y.div`
+`,Wv=Y.div`
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -395,4 +395,4 @@ Error generating stack: `+a.message+`
     gap: 1.5rem;
     max-width: 100%;
   }
-`;var Wv={};const kv=()=>{"serviceWorker"in navigator&&window.addEventListener("load",()=>{const i=`${Wv.PUBLIC_URL}/service-worker.js`;navigator.serviceWorker.register(i).catch(o=>console.error("Service Worker registration failed:",o))})},Fv={colors:{primary:"#9370DB",secondary:"#424769",accent:"#7077A1",background:"#F6F6F6",white:"#FFFFFF",text:{primary:"#2D3250",secondary:"#424769",light:"#7077A1"}},shadows:{small:"0 2px 4px rgba(0,0,0,0.1)",medium:"0 4px 6px rgba(0,0,0,0.1)"}},Iv=ly.createRoot(document.getElementById("root"));Iv.render(R.jsx(og,{theme:Fv,children:R.jsx(Kv,{})}));kv();
+`;var kv={};const Fv=()=>{"serviceWorker"in navigator&&window.addEventListener("load",()=>{const i=`${kv.PUBLIC_URL}/service-worker.js`;navigator.serviceWorker.register(i).catch(o=>console.error("Service Worker registration failed:",o))})},Iv={colors:{primary:"#9370DB",secondary:"#424769",accent:"#7077A1",background:"#F6F6F6",white:"#FFFFFF",text:{primary:"#2D3250",secondary:"#424769",light:"#7077A1"}},shadows:{small:"0 2px 4px rgba(0,0,0,0.1)",medium:"0 4px 6px rgba(0,0,0,0.1)"}},Pv=ly.createRoot(document.getElementById("root"));Pv.render(R.jsx(og,{theme:Iv,children:R.jsx(Jv,{})}));Fv();
