@@ -9,7 +9,7 @@ import questionbank from "../assets/images/questionbank.png";
 // import edubox from "../assets/images/edubox.png";
 import mbm from "../assets/images/mbm.png";
 import linepro from "../assets/images/linepro.png";
-// import espers from "../assets/images/espers.png";
+import espers from "../assets/images/espers.png";
 // import smbot from "../assets/images/smb.png";
 import smweb from "../assets/images/smw.png";
 import mootprint from "../assets/images/mootprint.png";
@@ -148,5 +148,13 @@ export const projects: Project[] = [
     imageUrl: mukgall,
     projectUrl: "https://mukgall.vercel.app/",
     githubUrl: "https://github.com/fakeengineer333/mukgall",
+  },
+  {
+    id: 17,
+    title: "ESPers Portal",
+    description: "ESPers 운영위원회 업무 포털",
+    imageUrl: espers,
+    projectUrl: "https://espers.vercel.app/",
+    githubUrl: "https://github.com/mukhoplus/espers-portal",
   },
 ];
