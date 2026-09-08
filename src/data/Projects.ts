@@ -18,6 +18,7 @@ import meomeokno from "../assets/images/meomeokno.png";
 // import muktbook from "../assets/images/muktbook.png";
 import cafficiency from "../assets/images/cafficiency.png";
 import mukgall from "../assets/images/mukgall.png";
+import harness from "../assets/images/harness.png";
 
 export const projects: Project[] = [
   {
@@ -156,5 +157,13 @@ export const projects: Project[] = [
     imageUrl: espers,
     projectUrl: "https://espers.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/espers-portal",
+  },
+  {
+    id: 18,
+    title: "Mukho Harness",
+    description: "자체 하네스 엔지니어링 구현체",
+    imageUrl: harness,
+    projectUrl: "https://github.com/mukhoplus/mukho-harness",
+    githubUrl: "https://github.com/mukhoplus/mukho-harness",
   },
 ];
