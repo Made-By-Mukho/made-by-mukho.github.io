@@ -153,7 +153,7 @@ export const projects: Project[] = [
   {
     id: 17,
     title: "ESPers Portal",
-    description: "ESPers 운영위원회 업무 포털",
+    description: "ESPers 운영위원회 업무 포털 프로토타입",
     imageUrl: espers,
     projectUrl: "https://espers.vercel.app/",
     githubUrl: "https://github.com/mukhoplus/espers-portal",
