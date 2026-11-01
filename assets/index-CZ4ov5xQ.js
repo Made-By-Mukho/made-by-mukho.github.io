@@ -142,7 +142,7 @@ Error generating stack: `+a.message+`
   &:first-child {
     margin-bottom: 0.5rem;
   }
-`,jg=[{id:1,company:"(주)비즈테크아이",role:"Software Engineer",period:"2023.09. - 2023.11.",description:["[인턴] Java 개발","Spring(Java), React(JavaScript) 기반 웹 풀스택 개발","개인 프로젝트(FE/TA), 팀 프로젝트 각 2회 수행","LG CNS AM Incubation Camp 수료"]},{id:2,company:"롯데이노베이트(주)",role:"Software Engineer",period:"2026.08. -",description:["백화점IS팀 영업통합시스템_MD 시스템 개발 및 운영"]}],Rg=()=>R.jsxs(Hg,{children:[R.jsx(Gg,{children:"경력"}),R.jsx(Bg,{children:jg.toSorted((i,o)=>o.id-i.id).map(i=>R.jsxs(qg,{children:[R.jsxs(Yg,{children:[R.jsx(Xg,{children:i.company}),R.jsx(Qg,{children:i.period})]}),R.jsx(Zg,{children:i.role}),R.jsx(Lg,{children:i.description.map((o,d)=>R.jsx(Vg,{children:o},d))})]},i.id))})]}),Hg=Y.section`
+`,jg=[{id:1,company:"(주)비즈테크아이",role:"Software Engineer",period:"2023.09. - 2023.11.",description:["[인턴] Java 개발","Spring(Java), React(JavaScript) 기반 웹 풀스택 개발","개인 프로젝트(FE/TA), 팀 프로젝트 각 2회 수행","LG CNS AM Incubation Camp 수료"]},{id:2,company:"롯데이노베이트(주)",role:"Software Engineer",period:"2026.08. -",description:["백화점IS팀 - 롯데백화점 MD 시스템 개발 및 운영"]}],Rg=()=>R.jsxs(Hg,{children:[R.jsx(Gg,{children:"경력"}),R.jsx(Bg,{children:jg.toSorted((i,o)=>o.id-i.id).map(i=>R.jsxs(qg,{children:[R.jsxs(Yg,{children:[R.jsx(Xg,{children:i.company}),R.jsx(Qg,{children:i.period})]}),R.jsx(Zg,{children:i.role}),R.jsx(Lg,{children:i.description.map((o,d)=>R.jsx(Vg,{children:o},d))})]},i.id))})]}),Hg=Y.section`
   margin-bottom: 2rem;
 `,Gg=Y.h2`
   font-size: 1.5rem;
