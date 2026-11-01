@@ -18,6 +18,6 @@ export const experiences: Experience[] = [
     company: "롯데이노베이트(주)",
     role: "Software Engineer",
     period: "2026.08. -",
-    description: ["백화점IS팀 영업통합시스템_MD 시스템 개발 및 운영"],
+    description: ["백화점IS팀 - 롯데백화점 MD 시스템 개발 및 운영"],
   },
 ];
