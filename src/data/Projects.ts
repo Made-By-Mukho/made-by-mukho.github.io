@@ -106,7 +106,8 @@ export const projects: Project[] = [
     title: "MootPrint",
     description: "발자취를 기록하는 위치 기록 애플리케이션",
     imageUrl: mootprint,
-    projectUrl: "https://github.com/mukhoplus/MootPrint-Archive",
+    projectUrl:
+      "https://drive.google.com/drive/folders/1lSoTGNKw5Xka73j0nucDjGZJf08k0k51?usp=drive_link",
     githubUrl: "https://github.com/mukhoplus/MootPrint-Archive",
   },
   // {
