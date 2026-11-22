@@ -12,7 +12,16 @@ const ExperienceSection: React.FC<{ className?: string }> = ({ className }) => {
           .map((experience) => (
             <ExperienceCard key={experience.id}>
               <CardHeader>
-                <CompanyName>{experience.company}</CompanyName>
+                <CompanyTitleGroup>
+                  {experience.logoUrl && (
+                    <CompanyLogo
+                      src={experience.logoUrl}
+                      alt={`${experience.company} logo`}
+                      loading="lazy"
+                    />
+                  )}
+                  <CompanyName>{experience.company}</CompanyName>
+                </CompanyTitleGroup>
                 <Period>{experience.period}</Period>
               </CardHeader>
               <Role>{experience.role}</Role>
@@ -64,6 +73,21 @@ const CardHeader = styled.div`
   }
 `;
 
+const CompanyTitleGroup = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+`;
+
+const CompanyLogo = styled.img`
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  object-fit: contain;
+  flex-shrink: 0;
+`;
+
 const CompanyName = styled.h3`
   margin: 0;
   font-size: 1.2rem;
@@ -102,6 +126,8 @@ export {
   ExperienceGrid,
   ExperienceCard,
   CardHeader as ExperienceCardHeader,
+  CompanyTitleGroup,
+  CompanyLogo,
   CompanyName,
   Period as ExperiencePeriod,
   Role as ExperienceRole,

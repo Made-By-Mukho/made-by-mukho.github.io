@@ -29,6 +29,7 @@ import ExperienceSection, {
   ExperienceGrid,
   ExperienceCard,
   ExperienceCardHeader,
+  CompanyLogo,
   CompanyName,
   ExperiencePeriod,
   ExperienceRole,
@@ -855,6 +856,12 @@ const InheritedExperienceSection = styled(ExperienceSection)`
 
   ${ExperienceCardHeader} {
     margin-bottom: 0.4rem;
+  }
+
+  ${CompanyLogo} {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
   }
 
   ${CompanyName} {

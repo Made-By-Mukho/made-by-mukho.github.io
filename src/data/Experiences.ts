@@ -1,5 +1,9 @@
 import { Experience } from "../interfaces/Experience";
 
+import biztech from "../assets/images/biztech.jpeg";
+import ssg from "../assets/images/ssg.webp";
+import lit from "../assets/images/lit.jpeg";
+
 export const experiences: Experience[] = [
   {
     id: 1,
@@ -13,6 +17,7 @@ export const experiences: Experience[] = [
       "LG CNS AM Incubation Camp 수료",
     ],
     category: "MAIN",
+    logoUrl: biztech,
   },
   {
     id: 2,
@@ -21,5 +26,6 @@ export const experiences: Experience[] = [
     period: "2026.08. -",
     description: ["백화점IS팀 - 롯데백화점 MD 시스템 개발 및 운영"],
     category: "MAIN",
+    logoUrl: lit,
   },
 ];
