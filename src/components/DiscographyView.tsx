@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { ThemeProvider, css } from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle, css } from "styled-components";
 import { discographyTheme } from "../styles/theme";
 import {
   discographyProjects,
@@ -142,6 +142,7 @@ const DiscographyView: React.FC = () => {
 
   return (
     <ThemeProvider theme={discographyTheme}>
+      <DiscographyScrollbarStyle />
       <PageWrapper>
         {/* ARTIST HERO (Extends GithubCard primitives & GITHUB_PROFILE) */}
         <ArtistHero>
@@ -158,7 +159,6 @@ const DiscographyView: React.FC = () => {
                   alt="Github Profile"
                   loading="lazy"
                 />
-                <CatalogSticker>2020 — 2026</CatalogSticker>
               </VinylSleeve>
             </ArtworkColumn>
 
@@ -1266,6 +1266,32 @@ const SectionHeading = styled(ProjectSectionTitle)`
  * 3. DISCOGRAPHY LAYOUT, YEAR TIMELINE & RELEASE GRADE BADGES
  * ============================================================================ */
 
+const DiscographyScrollbarStyle = createGlobalStyle`
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(147, 112, 219, 0.45) #0d0d11;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0d0d11;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(147, 112, 219, 0.35);
+    border-radius: 999px;
+    border: 2px solid #0d0d11;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(147, 112, 219, 0.72);
+  }
+`;
+
 const PageWrapper = styled.div`
   flex: 1;
   width: 100%;
@@ -1386,21 +1412,6 @@ const VinylCenterLabel = styled.div`
   border: 2px solid rgba(255, 255, 255, 0.2);
 `;
 
-const CatalogSticker = styled.span`
-  position: absolute;
-  z-index: 3;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(13, 13, 17, 0.86);
-  color: #dcd6f7;
-  border: 1px solid rgba(147, 112, 219, 0.45);
-  padding: 3px 7px;
-  font-size: 0.65rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  letter-spacing: 0.08em;
-  border-radius: 3px;
-`;
-
 const HeroMetaColumn = styled.div`
   flex: 1;
   min-width: 0;
@@ -1514,13 +1525,15 @@ const PrimaryPlayButton = styled.a`
   justify-content: center;
   gap: 0.5rem;
   width: 240px;
+  height: 40px;
   box-sizing: border-box;
   background-color: ${({ theme }) => theme.colors.primary};
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
   font-size: 0.88rem;
-  padding: 0.65rem 1.1rem;
+  line-height: 1;
+  padding: 0 1.1rem;
   border-radius: 999px;
   transition: background-color 0.2s ease, transform 0.15s ease;
 
@@ -1535,6 +1548,8 @@ const PrimaryPlayButton = styled.a`
 `;
 
 const PlayButtonText = styled.span`
+  line-height: 20px;
+  height: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2299,6 +2314,8 @@ const DockCatalogTag = styled.span`
 const DockTitle = styled.div`
   font-size: 0.9rem;
   font-weight: 700;
+  line-height: 20px;
+  height: 20px;
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
@@ -2307,6 +2324,8 @@ const DockTitle = styled.div`
 
 const DockDescription = styled.div`
   font-size: 0.76rem;
+  line-height: 18px;
+  height: 18px;
   color: #9d9db0;
   white-space: nowrap;
   overflow: hidden;
