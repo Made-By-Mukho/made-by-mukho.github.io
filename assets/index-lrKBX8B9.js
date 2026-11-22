@@ -205,7 +205,7 @@ Error generating stack: `+a.message+`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 `,S2=p.div`
   display: flex;
@@ -380,7 +380,7 @@ Error generating stack: `+a.message+`
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `,D1=p.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `,U1=p.h3`
   margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
@@ -488,6 +488,10 @@ Error generating stack: `+a.message+`
 
   ${n1} {
     margin-bottom: 0.4rem;
+
+    @media (max-width: 768px) {
+      gap: 0.4rem;
+    }
   }
 
   ${u1} {
@@ -633,8 +637,14 @@ Error generating stack: `+a.message+`
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
     margin-bottom: 0.25rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   ${U1} {
@@ -1446,8 +1456,12 @@ Error generating stack: `+a.message+`
     grid-template-columns: 38px minmax(160px, 1fr) 96px 160px;
   }
 
+  @media (max-width: 768px) {
+    grid-template-columns: 38px minmax(160px, 1fr) 96px;
+  }
+
   @media (max-width: 600px) {
-    grid-template-columns: 32px 1fr auto;
+    grid-template-columns: 32px 1fr;
     gap: 0.5rem;
   }
 `,xx=p.div`
@@ -1587,6 +1601,10 @@ Error generating stack: `+a.message+`
   align-items: center;
   justify-content: flex-end;
   gap: 0.45rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `,Dx=p(Ga)`
   font-size: 0.75rem;
   font-weight: 600;
