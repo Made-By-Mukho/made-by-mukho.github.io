@@ -151,6 +151,14 @@ export const discographyEraLabel: string =
       ? `${minReleaseYear}`
       : `${minReleaseYear} — ${maxReleaseYear}`;
 
+const currentYear = new Date().getFullYear();
+export const activeEraLabel: string =
+  releaseYears.length === 0
+    ? `${currentYear}`
+    : minReleaseYear >= currentYear
+      ? `${minReleaseYear}`
+      : `${minReleaseYear} — ${currentYear}`;
+
 export const groupReleasesByYear = (
   items: DiscographyProject[],
 ): DiscographyYearGroup[] => {

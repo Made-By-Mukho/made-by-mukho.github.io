@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styled, { ThemeProvider, createGlobalStyle, css } from "styled-components";
 import { discographyTheme } from "../styles/theme";
 import {
   discographyProjects,
   discographyEraLabel,
+  activeEraLabel,
   discographyExperiences,
   discographyEducations,
   currentMainExperience,
@@ -82,6 +83,14 @@ const DiscographyView: React.FC = () => {
   const [activeProject, setActiveProject] =
     useState<DiscographyProject>(latestRelease);
   const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const discographySectionRef = useRef<HTMLElement | null>(null);
+  const labelsSectionRef = useRef<HTMLDivElement | null>(null);
+  const sessionsSectionRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToSection = (target: HTMLElement | null) => {
+    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const currentLabel = currentMainExperience;
 
@@ -203,24 +212,36 @@ const DiscographyView: React.FC = () => {
 
               <StatsBar>
                 <StatItem>
-                  <StatValue>{discographyEraLabel}</StatValue>
+                  <StatValue>{activeEraLabel}</StatValue>
                   <StatLabel>ACTIVE ERA</StatLabel>
                 </StatItem>
                 <StatDivider />
-                <StatItem>
+                <StatButton
+                  type="button"
+                  onClick={() => scrollToSection(discographySectionRef.current)}
+                  title="디스코그래피로 이동"
+                >
                   <StatValue>{discographyProjects.length}</StatValue>
                   <StatLabel>RELEASES</StatLabel>
-                </StatItem>
+                </StatButton>
                 <StatDivider />
-                <StatItem>
+                <StatButton
+                  type="button"
+                  onClick={() => scrollToSection(labelsSectionRef.current)}
+                  title="경력으로 이동"
+                >
                   <StatValue>{discographyExperiences.length}</StatValue>
                   <StatLabel>LABELS</StatLabel>
-                </StatItem>
+                </StatButton>
                 <StatDivider />
-                <StatItem>
+                <StatButton
+                  type="button"
+                  onClick={() => scrollToSection(sessionsSectionRef.current)}
+                  title="참여 교육으로 이동"
+                >
                   <StatValue>{discographyEducations.length}</StatValue>
                   <StatLabel>SESSIONS</StatLabel>
-                </StatItem>
+                </StatButton>
               </StatsBar>
 
               <HeroActionRow>
@@ -289,7 +310,7 @@ const DiscographyView: React.FC = () => {
 
         <ContentContainer>
           {/* 1. DISCOGRAPHY SECTION (Extends ProjectSection primitives & DiscographyProject data) */}
-          <SectionBlock>
+          <SectionBlock ref={discographySectionRef}>
             <SectionHeaderBar>
               <SectionTitleGroup>
                 <SectionHeading>
@@ -315,6 +336,8 @@ const DiscographyView: React.FC = () => {
                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
                   </svg>
                   <SearchInput
+                    id="discography-search"
+                    name="discographySearch"
                     type="text"
                     placeholder="연도, 제목, 설명 검색..."
                     value={searchQuery}
@@ -657,12 +680,16 @@ const DiscographyView: React.FC = () => {
           </BioLayout>
 
           {/* 3. LABEL HISTORY & CREDITS (Directly inherits and reuses <ExperienceSection />) */}
-          <InheritedExperienceSection />
+          <ScrollAnchor ref={labelsSectionRef}>
+            <InheritedExperienceSection />
+          </ScrollAnchor>
 
           {/* 4. ALMA MATER & STUDIO SESSIONS (Directly inherits and reuses <AcademicSection /> & <EducationSection />) */}
           <DualColumnGrid>
             <InheritedAcademicSection />
-            <InheritedEducationSection />
+            <ScrollAnchor ref={sessionsSectionRef}>
+              <InheritedEducationSection />
+            </ScrollAnchor>
           </DualColumnGrid>
         </ContentContainer>
 
@@ -1041,6 +1068,7 @@ const InheritedEducationSection = styled(EducationSection)`
 `;
 
 const InheritedFooter = styled(Footer)`
+  flex-shrink: 0;
   margin-top: auto;
   padding: 2rem 1.5rem;
   background-color: #09090c;
@@ -1328,6 +1356,7 @@ const ScrollableBody = styled.div`
 `;
 
 const ArtistHero = styled.section`
+  flex-shrink: 0;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -1511,6 +1540,27 @@ const StatItem = styled.div`
   gap: 0.4rem;
 `;
 
+const StatButton = styled.button`
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  background: transparent;
+  border: none;
+  padding: 0.15rem 0.35rem;
+  margin: -0.15rem -0.35rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: rgba(147, 112, 219, 0.18);
+  }
+`;
+
+const ScrollAnchor = styled.div`
+  scroll-margin-top: 16px;
+`;
+
 const StatValue = styled.span`
   font-size: 0.95rem;
   font-weight: 700;
@@ -1601,6 +1651,7 @@ const SecondaryButton = styled.button`
 `;
 
 const ContentContainer = styled.main`
+  flex-shrink: 0;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -1620,6 +1671,7 @@ const SectionBlock = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  scroll-margin-top: 16px;
 `;
 
 const SectionHeaderBar = styled.div`
