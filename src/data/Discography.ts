@@ -140,6 +140,17 @@ export const discographyProjects: DiscographyProject[] = chronologicalSpecs
   })
   .sort(compareDiscographyLatestFirst);
 
+const releaseYears = discographyProjects.map((project) => project.releaseYear);
+const minReleaseYear = Math.min(...releaseYears);
+const maxReleaseYear = Math.max(...releaseYears);
+
+export const discographyEraLabel: string =
+  releaseYears.length === 0
+    ? ""
+    : minReleaseYear === maxReleaseYear
+      ? `${minReleaseYear}`
+      : `${minReleaseYear} — ${maxReleaseYear}`;
+
 export const groupReleasesByYear = (
   items: DiscographyProject[],
 ): DiscographyYearGroup[] => {

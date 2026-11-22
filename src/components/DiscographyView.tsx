@@ -3,6 +3,7 @@ import styled, { ThemeProvider, createGlobalStyle, css } from "styled-components
 import { discographyTheme } from "../styles/theme";
 import {
   discographyProjects,
+  discographyEraLabel,
   discographyExperiences,
   discographyEducations,
   currentMainExperience,
@@ -144,7 +145,8 @@ const DiscographyView: React.FC = () => {
     <ThemeProvider theme={discographyTheme}>
       <DiscographyScrollbarStyle />
       <PageWrapper>
-        {/* ARTIST HERO (Extends GithubCard primitives & GITHUB_PROFILE) */}
+        <ScrollableBody>
+          {/* ARTIST HERO (Extends GithubCard primitives & GITHUB_PROFILE) */}
         <ArtistHero>
           <HeroBackdrop />
           <HeroInner>
@@ -201,7 +203,7 @@ const DiscographyView: React.FC = () => {
 
               <StatsBar>
                 <StatItem>
-                  <StatValue>2020 — 2026</StatValue>
+                  <StatValue>{discographyEraLabel}</StatValue>
                   <StatLabel>ACTIVE ERA</StatLabel>
                 </StatItem>
                 <StatDivider />
@@ -293,7 +295,7 @@ const DiscographyView: React.FC = () => {
                 <SectionHeading>
                   디스코그래피{" "}
                   <SectionSubCount>
-                    2020 — 2026 · {discographyProjects.length} Releases
+                    {discographyEraLabel} · {discographyProjects.length} Releases
                   </SectionSubCount>
                 </SectionHeading>
               </SectionTitleGroup>
@@ -647,7 +649,7 @@ const DiscographyView: React.FC = () => {
                 <SpecRow>
                   <SpecKey>DISCOGRAPHY</SpecKey>
                   <SpecVal>
-                    2020 — 2026 · {discographyProjects.length} Releases
+                    {discographyEraLabel} · {discographyProjects.length} Releases
                   </SpecVal>
                 </SpecRow>
               </SpecList>
@@ -666,8 +668,9 @@ const DiscographyView: React.FC = () => {
 
         {/* FOOTER (Directly inherits and reuses <Footer />) */}
         <InheritedFooter />
+        </ScrollableBody>
 
-        {/* NOW PLAYING STICKY DOCK */}
+        {/* NOW PLAYING DOCK */}
         <NowPlayingDock aria-label="현재 선택된 프로젝트 플레이어">
           <NowPlayingInner>
             <DockTrackInfo>
@@ -1267,39 +1270,61 @@ const SectionHeading = styled(ProjectSectionTitle)`
  * ============================================================================ */
 
 const DiscographyScrollbarStyle = createGlobalStyle`
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(147, 112, 219, 0.45) #0d0d11;
+  html,
+  body,
+  #root {
+    height: 100%;
+    overflow: hidden;
   }
 
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #0d0d11;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: rgba(147, 112, 219, 0.35);
-    border-radius: 999px;
-    border: 2px solid #0d0d11;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(147, 112, 219, 0.72);
+  #root > div {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
   }
 `;
 
 const PageWrapper = styled.div`
   flex: 1;
+  min-height: 0;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background};
   color: ${({ theme }) => theme.colors.text.primary};
   display: flex;
   flex-direction: column;
-  padding-bottom: 84px;
+  overflow: hidden;
+`;
+
+const ScrollableBody = styled.div`
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  scrollbar-width: auto;
+  scrollbar-color: rgba(147, 112, 219, 0.45) #0d0d11;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #0d0d11;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(147, 112, 219, 0.35);
+    border-radius: 999px;
+    border: 2px solid #0d0d11;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(147, 112, 219, 0.72);
+  }
 `;
 
 const ArtistHero = styled.section`
@@ -2239,10 +2264,8 @@ const DualColumnGrid = styled.div`
 `;
 
 const NowPlayingDock = styled.aside`
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-shrink: 0;
+  width: 100%;
   z-index: 95;
   background: rgba(18, 18, 24, 0.95);
   backdrop-filter: blur(12px);
