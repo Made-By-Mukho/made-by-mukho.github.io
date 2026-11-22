@@ -1,25 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 
-const GithubCard = () => {
+export const GITHUB_PROFILE = {
+  avatarUrl:
+    "https://avatars.githubusercontent.com/u/67003627?s=400&u=a65577955bf17a61acbc66022113889d24967c6b&v=4",
+  name: "Mukho",
+  role: "Software Engineer",
+  skills: "Spring Boot(Java), React(TypeScript)",
+  githubUrl: "https://github.com/mukhoplus",
+  githubLabel: "[Github] Mukhoplus",
+} as const;
+
+const GithubCard: React.FC<{ className?: string }> = ({ className }) => {
   return (
-    <Card>
+    <Card className={className}>
       <CardContent>
         <GithubImage
-          src="https://avatars.githubusercontent.com/u/67003627?s=400&u=a65577955bf17a61acbc66022113889d24967c6b&v=4"
+          src={GITHUB_PROFILE.avatarUrl}
           alt="Github Profile"
           loading="lazy"
         />
         <ProfileInfo>
-          <Name>Mukho</Name>
-          <Role>Software Engineer</Role>
-          <Skills>Spring Boot(Java), React(TypeScript)</Skills>
+          <Name title={GITHUB_PROFILE.name}>{GITHUB_PROFILE.name}</Name>
+          <Role title={GITHUB_PROFILE.role}>{GITHUB_PROFILE.role}</Role>
+          <Skills title={GITHUB_PROFILE.skills}>{GITHUB_PROFILE.skills}</Skills>
           <GithubLink
-            href="https://github.com/mukhoplus"
+            href={GITHUB_PROFILE.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
+            title={GITHUB_PROFILE.githubLabel}
           >
-            [Github] Mukhoplus
+            {GITHUB_PROFILE.githubLabel}
           </GithubLink>
         </ProfileInfo>
       </CardContent>
@@ -132,5 +143,16 @@ const GithubLink = styled.a`
     font-size: 1rem;
   }
 `;
+
+export {
+  Card as GithubBaseCard,
+  CardContent as GithubCardContent,
+  GithubImage,
+  ProfileInfo,
+  Name as GithubName,
+  Role as GithubRole,
+  Skills as GithubSkills,
+  GithubLink,
+};
 
 export default GithubCard;

@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { projects } from "../data/Projects";
 
-const ProjectSection = () => {
+const ProjectSection: React.FC<{ className?: string }> = ({ className }) => {
   return (
-    <Section>
+    <Section className={className}>
       <SectionTitle>주요 프로젝트</SectionTitle>
       <ProjectGrid>
         {projects.map((project) => (
@@ -109,5 +109,18 @@ const ProjectLink = styled.a`
     color: ${({ theme }) => theme.colors.primary};
   }
 `;
+
+export {
+  Section as ProjectSectionContainer,
+  SectionTitle as ProjectSectionTitle,
+  ProjectGrid,
+  ProjectCard,
+  ProjectImage,
+  ProjectInfo,
+  ProjectTitle,
+  ProjectDescription,
+  LinkContainer,
+  ProjectLink,
+};
 
 export default ProjectSection;

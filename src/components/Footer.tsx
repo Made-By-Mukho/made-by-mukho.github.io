@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Footer = () => {
+const Footer: React.FC<{ className?: string }> = ({ className }) => {
   const getFooterText = () => {
     const currentYear = new Date().getFullYear();
 
@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <FooterContainer>
+    <FooterContainer className={className}>
       <VisitorCounter>
         <img
           src="https://hits.sh/made-by-mukho.github.io.svg"
@@ -45,5 +45,7 @@ const FooterText = styled.p`
   opacity: 0.9;
   color: #000;
 `;
+
+export { FooterContainer, VisitorCounter, FooterText };
 
 export default Footer;

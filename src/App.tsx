@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
 import GithubCard from "./components/GithubCard";
@@ -8,22 +8,42 @@ import AcademicSection from "./components/AcademicSection";
 import ProjectSection from "./components/ProjectSection";
 import EducationSection from "./components/EducationSection";
 import Footer from "./components/Footer";
+import DiscographyView from "./components/DiscographyView";
+import { projects } from "./data/Projects";
 
 function App() {
+  const [isDiscography, setIsDiscography] = useState<boolean>(true);
+
+  useEffect(() => {
+    projects.forEach((project) => {
+      const img = new Image();
+      img.src = project.imageUrl;
+    });
+  }, []);
+
   return (
     <Container>
-      <Header />
-      <Main>
-        <ContentWrapper>
-          <GithubCard />
-          <AboutSection />
-          <ExperienceSection />
-          <AcademicSection />
-          <ProjectSection />
-          <EducationSection />
-        </ContentWrapper>
-      </Main>
-      <Footer />
+      <Header
+        isDiscography={isDiscography}
+        onToggleVersion={() => setIsDiscography((prev) => !prev)}
+      />
+      {isDiscography ? (
+        <DiscographyView />
+      ) : (
+        <>
+          <Main>
+            <ContentWrapper>
+              <GithubCard />
+              <AboutSection />
+              <ExperienceSection />
+              <AcademicSection />
+              <ProjectSection />
+              <EducationSection />
+            </ContentWrapper>
+          </Main>
+          <Footer />
+        </>
+      )}
     </Container>
   );
 }

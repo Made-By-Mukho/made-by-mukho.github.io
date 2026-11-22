@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { academics } from "../data/Academics";
 
-const AcademicSection = () => {
+const AcademicSection: React.FC<{ className?: string }> = ({ className }) => {
   return (
-    <Section>
+    <Section className={className}>
       <SectionTitle>학력</SectionTitle>
       <AcademicGrid>
         {academics.map((academic) => (
@@ -128,5 +128,21 @@ const Description = styled.p`
     text-align: left;
   }
 `;
+
+export {
+  Section as AcademicSectionContainer,
+  SectionTitle as AcademicSectionTitle,
+  AcademicGrid,
+  AcademicCard,
+  CardContent as AcademicCardContent,
+  LogoWrapper,
+  UniversityLogo,
+  AcademicInfo,
+  CardHeader as AcademicCardHeader,
+  UniversityName,
+  Period as AcademicPeriod,
+  Major,
+  Description as AcademicDescription,
+};
 
 export default AcademicSection;

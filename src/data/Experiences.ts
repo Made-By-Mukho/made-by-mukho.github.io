@@ -12,6 +12,7 @@ export const experiences: Experience[] = [
       "개인 프로젝트(FE/TA), 팀 프로젝트 각 2회 수행",
       "LG CNS AM Incubation Camp 수료",
     ],
+    category: "MAIN",
   },
   {
     id: 2,
@@ -19,5 +20,6 @@ export const experiences: Experience[] = [
     role: "Software Engineer",
     period: "2026.08. -",
     description: ["백화점IS팀 - 롯데백화점 MD 시스템 개발 및 운영"],
+    category: "MAIN",
   },
 ];

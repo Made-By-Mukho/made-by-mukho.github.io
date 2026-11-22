@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { educations } from "../data/Educations";
 
-const EducationSection = () => {
+const EducationSection: React.FC<{ className?: string }> = ({ className }) => {
   return (
-    <Section>
+    <Section className={className}>
       <SectionTitle>참여 교육</SectionTitle>
       <EducationGrid>
         {educations.map((education) => (
@@ -74,5 +74,17 @@ const Description = styled.p`
   color: #444;
   line-height: 1.5;
 `;
+
+export {
+  Section as EducationSectionContainer,
+  SectionTitle as EducationSectionTitle,
+  EducationGrid,
+  EducationCard,
+  CardHeader as EducationCardHeader,
+  Title as EducationTitle,
+  Institution,
+  Period as EducationPeriod,
+  Description as EducationDescription,
+};
 
 export default EducationSection;

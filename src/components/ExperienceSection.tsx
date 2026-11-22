@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { experiences } from "../data/Experiences";
 
-const ExperienceSection = () => {
+const ExperienceSection: React.FC<{ className?: string }> = ({ className }) => {
   return (
-    <Section>
+    <Section className={className}>
       <SectionTitle>경력</SectionTitle>
       <ExperienceGrid>
         {experiences
@@ -95,5 +95,18 @@ const DescriptionItem = styled.li`
     margin-bottom: 0;
   }
 `;
+
+export {
+  Section as ExperienceSectionContainer,
+  SectionTitle as ExperienceSectionTitle,
+  ExperienceGrid,
+  ExperienceCard,
+  CardHeader as ExperienceCardHeader,
+  CompanyName,
+  Period as ExperiencePeriod,
+  Role as ExperienceRole,
+  Description as ExperienceDescription,
+  DescriptionItem as ExperienceDescriptionItem,
+};
 
 export default ExperienceSection;

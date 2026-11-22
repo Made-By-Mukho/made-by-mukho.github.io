@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-const AboutSection = () => {
+const AboutSection: React.FC<{ className?: string }> = ({ className }) => {
   return (
-    <Section>
+    <Section className={className}>
       <SectionTitle>소개</SectionTitle>
       <AboutCard>
         <AboutContent>
@@ -56,5 +56,13 @@ const Paragraph = styled.p`
     margin-bottom: 0.5rem;
   }
 `;
+
+export {
+  Section as AboutSectionContainer,
+  SectionTitle as AboutSectionTitle,
+  AboutCard,
+  AboutContent,
+  Paragraph as AboutParagraph,
+};
 
 export default AboutSection;

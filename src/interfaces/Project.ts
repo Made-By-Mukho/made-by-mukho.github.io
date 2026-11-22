@@ -1,3 +1,5 @@
+import { WorkCategory } from "./Experience";
+
 export interface Project {
   id: number;
   title: string;
@@ -5,4 +7,5 @@ export interface Project {
   imageUrl: string;
   projectUrl: string;
   githubUrl: string;
+  category?: WorkCategory;
 }
