@@ -50,7 +50,7 @@ const EducationCard = styled.div`
 `;
 
 const CardHeader = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 const Title = styled.h3`

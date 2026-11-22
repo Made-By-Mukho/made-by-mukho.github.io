@@ -886,6 +886,10 @@ const InheritedExperienceSection = styled(ExperienceSection)`
 
   ${ExperienceCardHeader} {
     margin-bottom: 0.4rem;
+
+    @media (max-width: 768px) {
+      gap: 0.4rem;
+    }
   }
 
   ${CompanyLogo} {
@@ -1035,8 +1039,14 @@ const InheritedEducationSection = styled(EducationSection)`
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    column-gap: 0.5rem;
+    row-gap: 0.25rem;
     margin-bottom: 0.25rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   ${EducationTitle} {
@@ -2031,8 +2041,12 @@ const trackGridTemplate = css`
     grid-template-columns: 38px minmax(160px, 1fr) 96px 160px;
   }
 
+  @media (max-width: 768px) {
+    grid-template-columns: 38px minmax(160px, 1fr) 96px;
+  }
+
   @media (max-width: 600px) {
-    grid-template-columns: 32px 1fr auto;
+    grid-template-columns: 32px 1fr;
     gap: 0.5rem;
   }
 `;
@@ -2212,6 +2226,10 @@ const ColActions = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 0.45rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const TrackLinkButton = styled(ProjectLink)`
