@@ -61,15 +61,17 @@ const DISCOGRAPHY_RELEASE_SPECS: ReleaseMetadataSpec[] = [
     releaseGrade: "Single",
   },
   {
-    baseProjectId: 13,
-    releaseYear: 2025,
-    releaseGrade: "Single",
-  },
-  {
     baseProjectId: 9,
     releaseYear: 2025,
     releaseGrade: "EP",
     isTitle: true,
+  },
+  {
+    baseProjectId: 10,
+    releaseYear: 2025,
+    releaseGrade: "EP",
+    isTitle: true,
+    isHot: true,
   },
   {
     baseProjectId: 11,
@@ -78,11 +80,9 @@ const DISCOGRAPHY_RELEASE_SPECS: ReleaseMetadataSpec[] = [
     isHot: true,
   },
   {
-    baseProjectId: 10,
+    baseProjectId: 13,
     releaseYear: 2025,
-    releaseGrade: "Full Album",
-    isTitle: true,
-    isHot: true,
+    releaseGrade: "Single",
   },
   {
     baseProjectId: 16,
