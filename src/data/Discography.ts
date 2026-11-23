@@ -85,16 +85,16 @@ const DISCOGRAPHY_RELEASE_SPECS: ReleaseMetadataSpec[] = [
     isHot: true,
   },
   {
-    baseProjectId: 17,
-    releaseYear: 2026,
-    releaseGrade: "EP",
-  },
-  {
     baseProjectId: 16,
     releaseYear: 2026,
     releaseGrade: "Full Album",
     isTitle: true,
     isHot: true,
+  },
+  {
+    baseProjectId: 17,
+    releaseYear: 2026,
+    releaseGrade: "EP",
   },
 ];
 
