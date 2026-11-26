@@ -31,6 +31,7 @@ export const discographyTheme = {
       "Full Album": "#8A7E80",
       EP: "#FF890A",
       Single: "#9370DB",
+      Compilation: "#03C75A",
     },
     text: {
       ...theme.colors.text,

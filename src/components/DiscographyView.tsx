@@ -73,7 +73,12 @@ import Footer, { FooterText } from "./Footer";
 type DiscographyViewMode = "combined" | "albums" | "tracklist";
 type GradeFilter = "ALL" | ReleaseGrade;
 
-const RELEASE_GRADES: ReleaseGrade[] = ["Full Album", "EP", "Single"];
+const RELEASE_GRADES: ReleaseGrade[] = [
+  "Full Album",
+  "EP",
+  "Single",
+  "Compilation",
+];
 
 const DiscographyView: React.FC = () => {
   const latestRelease = discographyProjects[0];
@@ -387,7 +392,7 @@ const DiscographyView: React.FC = () => {
               </ControlsToolbar>
             </SectionHeaderBar>
 
-            {/* RELEASE GRADE FILTER BAR: Full Album(#8A7E80), EP(#FF890A), Single(#9370DB) */}
+            {/* RELEASE GRADE FILTER BAR: Full Album(#8A7E80), EP(#FF890A), Single(#9370DB), Compilation(#03C75A) */}
             <GradeFilterRow aria-label="발매 등급 필터">
               <GradeFilterChip
                 type="button"

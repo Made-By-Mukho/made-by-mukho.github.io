@@ -3,7 +3,7 @@ import { Experience } from "./Experience";
 import { Academic } from "./Academic";
 import { Education } from "./Education";
 
-export type ReleaseGrade = "Full Album" | "EP" | "Single";
+export type ReleaseGrade = "Full Album" | "EP" | "Single" | "Compilation";
 
 export interface DiscographyProject extends Project {
   releaseNumber: number;

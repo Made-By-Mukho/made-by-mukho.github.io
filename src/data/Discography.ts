@@ -19,6 +19,7 @@ export const RELEASE_GRADE_COLORS: Record<ReleaseGrade, string> = {
   "Full Album": "#8A7E80",
   EP: "#FF890A",
   Single: "#9370DB",
+  Compilation: "#03C75A",
 };
 
 interface ReleaseMetadataSpec {
